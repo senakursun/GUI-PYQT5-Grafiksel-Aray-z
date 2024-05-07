@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>459</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>459</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMen_ler">
+    <property name="title">
+     <string>Menü</string>
+    </property>
+    <widget class="QMenu" name="menu_lemler">
+     <property name="title">
+      <string>İşlemler</string>
+     </property>
+     <widget class="QMenu" name="menu_ifre">
+      <property name="title">
+       <string>Şifre</string>
+      </property>
+      <addaction name="degistir"/>
+     </widget>
+     <addaction name="menu_ifre"/>
+    </widget>
+    <widget class="QMenu" name="menuKar_la_t_r">
+     <property name="title">
+      <string>Karşılaştır</string>
+     </property>
+     <addaction name="dice"/>
+     <addaction name="separator"/>
+     <addaction name="levenshtein"/>
+    </widget>
+    <addaction name="menu_lemler"/>
+    <addaction name="separator"/>
+    <addaction name="menuKar_la_t_r"/>
+    <addaction name="separator"/>
+    <addaction name="cikis"/>
+   </widget>
+   <addaction name="menuMen_ler"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="cikis">
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+  </action>
+  <action name="degistir">
+   <property name="text">
+    <string>Değiştir</string>
+   </property>
+  </action>
+  <action name="dice">
+   <property name="text">
+    <string>Dice Katsayısı Kullanarak Karşılaştır</string>
+   </property>
+  </action>
+  <action name="levenshtein">
+   <property name="text">
+    <string>Levenshtein Distance Kullanarak Karşılaştır</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
